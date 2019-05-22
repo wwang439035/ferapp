@@ -1,1 +1,1 @@
-# ferapp
+# Facial Expression Recognition Application
