@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
     "axios": "^0.18.0",
+    "babel-preset-react": "^6.24.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1",
     "react-webcam": "^1.1.1",
-    "recharts": "^1.6.2"
+    "recharts": "^1.6.2",
+    "webpack-bundle-tracker": "^0.4.2-beta",
+    "webpack-cli": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "webpack --config webpack.config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

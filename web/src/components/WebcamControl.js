@@ -57,7 +57,7 @@ class WebcamControl extends Component {
     capture = () => {
         const imageSrc = this.webcam.getScreenshot();
         this.setState({imageSrc});
-        fetch("http://127.0.0.1:8000/facialExpression/extractExpression", {
+        fetch("http://localhost:8000/ferapp/retrieve", {
             method: "POST",
             headers: {
                 Accept: "application/json",

@@ -6,7 +6,7 @@ from .utils import read_base64_image, get_face_from_image, get_expression_from_a
 
 # Create your views here.
 def home(request):
-    render(request, 'build/index.html')
+    render(request, 'public/index.html')
 
 
 @api_view(['POST'])

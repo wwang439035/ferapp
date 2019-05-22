@@ -19,6 +19,6 @@ from services.views import home, retrieve_expression
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('ferapp/', home, 'home'),
-    path('ferapp/retrieve', retrieve_expression, 'retrieve'),
+    path('ferapp/', home, name='home'),
+    path('ferapp/retrieve', retrieve_expression, name='retrieve'),
 ]
